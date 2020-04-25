@@ -103,3 +103,4 @@ act.int <- rbind(act.int.weekday, act.int.weekend)
 act.int$weekend <- as.factor(act.int$weekend)
 ggplot(act.int, aes(interval, steps)) + geom_line() + facet_grid(weekend ~ .)
  
+
